@@ -1,0 +1,10 @@
+
+<bs-navbar></bs-navbar>
+
+<h1>{{ pageTitle }}</h1>
+
+<bs-welcome></bs-welcome>
+
+<button (click)="showBook()">{{ showImg ? 'Hide Book' : 'Show Book' }}</button>
+
+<div><img src="./assets/images/trump-book.jpg" class="{{ showImg ? 'show-img' : 'hide-img' }}" /></div>
