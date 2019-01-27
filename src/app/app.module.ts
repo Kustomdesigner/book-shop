@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -10,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppComponent,
     WelcomeComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule

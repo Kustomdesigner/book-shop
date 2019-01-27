@@ -1,10 +1,15 @@
 
 <bs-navbar></bs-navbar>
 
-<h1>{{ pageTitle }}</h1>
+<div class="container">
+    <h1>{{ pageTitle }}</h1>
 
-<bs-welcome></bs-welcome>
+    <bs-welcome></bs-welcome>
 
-<button (click)="showBook()">{{ showImg ? 'Hide Book' : 'Show Book' }}</button>
+    <button (click)="showBook()">{{ showImg ? 'Hide Book' : 'Show Book' }}</button>
+    <div>
+        <img src="./assets/images/trump-book.jpg" class="{{ showImg ? 'show-img' : 'hide-img' }}" />
+    </div>
 
-<div><img src="./assets/images/trump-book.jpg" class="{{ showImg ? 'show-img' : 'hide-img' }}" /></div>
+    <bs-footer></bs-footer>
+</div><!-- .container -->
